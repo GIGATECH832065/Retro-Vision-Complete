@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - GIGATECH1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <video autoplay loop muted class="bg-video" id="bgVideo">
+        <source src="name1.mp4" type="video/mp4">
+    </video>
+
+    <header>
+        <nav class="navbar">
+            <a href="home.html">Home</a>
+            <a href="retro1.html">Retro1</a>
+            <a href="retro2.html">Retro2</a>
+            <a href="retro3.html">Retro3</a>
+            <a href="contact.html">Contact</a>
+            <a href="http://www.gt1blog.tech/" target="_blank" rel="noopener noreferrer">Blog</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Welcome to GIGATECH1</h1>
+        <div class="video-desc">Texas Chainsaw Massacre</div>
+    </main>
+
+    <footer>
+        <button id="audioToggle">Toggle Audio</button>
+        <button id="modeToggle">Light/Dark Mode</button>
+        <div class="social-icons">
+            <a href="#" class="facebook">FB</a>
+            <a href="#" class="instagram">IG</a>
+            <a href="#" class="twitter">X</a>
+        </div>
+        <p>© 2025 GIGATECH1. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const video = document.getElementById('bgVideo');
+        const audioToggle = document.getElementById('audioToggle');
+        const modeToggle = document.getElementById('modeToggle');
+
+        audioToggle.addEventListener('click', () => {
+            video.muted = !video.muted;
+            audioToggle.textContent = video.muted ? 'Toggle Audio' : 'Mute Audio';
+        });
+
+        modeToggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+    </script>
+</body>
+</html>

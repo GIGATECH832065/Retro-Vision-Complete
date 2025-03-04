@@ -1,0 +1,89 @@
+body {
+  overflow-x: hidden;
+  font-family: Helvetica;
+  color: #fff;
+  background: #6e2c00;
+  margin: 20px 0;
+}
+
+div {
+  width: 100%;
+  text-align: center;
+  animation: gradient 8s infinite ease-in-out;
+  letter-spacing: 10px;
+  white-space: nowrap;
+  font-size: 20px;
+}
+
+.s3 {
+  font-size: 32px;
+}
+
+.a01 {
+  animation-delay: 0.1s;
+}
+
+.a06 {
+  animation-delay: 0.6s;
+}
+
+@keyframes gradient {
+  0%, 100% {
+    letter-spacing: 10px;
+    transform: translateX(10px);
+  }
+
+  50% {
+    letter-spacing: 50px;
+    transform: translateX(50px);
+  }
+}
+
+/* ENTER SITE BUTTON STYLES */
+.enter-site-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+  animation: fadeIn 2s ease-in-out 10s forwards;
+}
+
+.enter-site-btn {
+  background-color: #fff;
+  color: #6e2c00;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.enter-site-btn:hover {
+  background-color: #6e2c00;
+  color: #fff;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Footer Link Styling */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer a:active {
+  color: #fff;
+}
